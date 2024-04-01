@@ -1,7 +1,6 @@
 # Mind map for Nextcloud
 
-This application enables Nextcloud users to open, save and edit mind map files in the web browser.
-App icon by [Icons8](https://icons8.com) and mind map powered by [KityMinder Editor](https://github.com/fex-team/kityminder-editor).
+This is a mind mapping application from Nextcloud. It allows users to open, edit, and save mind map files in a browser. The application icon comes from [Icons8](https://icons8.com), and the application core display module Use [KityMinder Editor](https://github.com/fex-team/kityminder-editor) and [KityMinder core](https://github.com/fex-team/kityminder-core)
 
 ## How to use
 1. Install app
@@ -10,27 +9,31 @@ App icon by [Icons8](https://icons8.com) and mind map powered by [KityMinder Edi
 
 You can also click a .km file to edit.
 
-## Contribute
+## How to use
+1. Install the app
+2. Click the New button on the Nextcloud file interface
+3. Select "New Mind Map File"
+
+You can also directly click on a .km file to edit it.
+
+## How to Contribute
 translate: Go to [https://github.com/ACTom/kityminder-editor](https://github.com/ACTom/kityminder-editor), and translate strings in l10n directory.
 
-# 中文说明
-这是Nextcloud的一个思维导图应用，它可以让用户在浏览器中打开、编辑、保存思维导图文件，应用的图标来自于[Icons8](https://icons8.com)，应用核心显示模块采用[KityMinder Editor](https://github.com/fex-team/kityminder-editor)。
+## Application screenshot
+in Chinese :
+![Screenshot 1](https://raw.githubusercontent.com/ACTom/files_mindmap/master/screenshots/1.png)
 
-## 如何使用
-1. 安装应用
-2. 点击Nextcloud 文件界面的新建按钮
-3. 选择"新建思维导图文件"
+![Screenshot 2](https://raw.githubusercontent.com/ACTom/files_mindmap/master/screenshots/2.png)
 
-你也可以直接点击一个.km文件来编辑。
+![Screenshot 3](https://raw.githubusercontent.com/ACTom/files_mindmap/master/screenshots/3.png)
 
-## 应用截图
-![截图1](https://raw.githubusercontent.com/ACTom/files_mindmap/master/screenshots/1.png)
+## Changelog
+### 30/03/2024 by Lionel Clarini, HOGO Solutions
+- Add json export
+- App bar and menu design improvements
+- Remove Nextcloud app-navigation-vue when Mind map is launched
+- French translation
 
-![截图2](https://raw.githubusercontent.com/ACTom/files_mindmap/master/screenshots/2.png)
-
-![截图3](https://raw.githubusercontent.com/ACTom/files_mindmap/master/screenshots/3.png)
-
-## 计划
-* 本地图片上传并编码至km文件（已完成）
-* 多标签页思维导图kmp格式支持
-* xmind格式支持
+## :busts_in_silhouette: Contributors
+- [ACTom](https://github.com/ACTom)
+- [Lionel Clarini - HOGO Solutions](https://github.com/Lionel-cl)

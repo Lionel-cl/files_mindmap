@@ -61,6 +61,8 @@ var FilesMindMap = {
 		// replace the controls with our own
 		$('#app-content #controls').removeClass('hidden');
 
+		$('#app-navigation-vue').removeClass('hidden');
+		
 		document.title = this._lastTitle;
 
 		if (!$('#mimetype').val()) {
@@ -104,6 +106,8 @@ var FilesMindMap = {
 		$("#pageWidthOption").attr("selected","selected");
 		// replace the controls with our own
 		$('#app-content #controls').addClass('hidden');
+		
+		$('#app-navigation-vue').addClass('hidden');
 
 		$('#mmframe').load(function(){
 			var iframe = $('#mmframe').contents();
