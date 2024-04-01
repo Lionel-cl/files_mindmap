@@ -94,20 +94,29 @@
         }
         #autosave-div {
             position: absolute;
-            right: 280px;
+            right: 290px;
             z-index: 10000;
-            width: 100px;
+            width: 200px;
         }
         #autosave-checkbox {
             bottom: 3px;
         }
         #save-div {
             position: absolute;
-            right: 180px;
+            right: 170px;
             z-index: 10000;
-            width: 60px;
+            width: 150px;
         }
-
+        #save-button {
+            border-radius: 4px !important;
+            background-color: rgb(1, 130, 202);
+            color:#FFFF
+        }
+        #export-button-head {
+            border-radius: 4px !important;
+            background-color: rgb(1, 130, 202);
+            color:#FFFF
+        }
         #export-button {
             position: absolute;
             right: 40px;
@@ -129,7 +138,7 @@
 <button id="save-button" type="button" class="btn btn-default export-caption dropdown-toggle" title="<?php p($l->t('Save')); ?>"><?php p($l->t('Save')); ?></button>
 </div>
 <div id="export-button" class="btn-group-vertical" dropdown is-open="isopen">
-    <button type="button"
+    <button id="export-button-head" type="button"
             class="btn btn-default export-caption dropdown-toggle"
             title="<?php p($l->t('Export')); ?>"
             dropdown-toggle>
@@ -139,19 +148,22 @@
     </button>
     <ul class="dropdown-menu" role="menu">
         <li>
-            <a id="export-png" href"><?php p($l->t('Export to PNG')); ?></a>
+            <a id="export-png" href"><?php p($l->t('to PNG')); ?></a>
         </li>
         <li>
-            <a id="export-svg" href"><?php p($l->t('Export to SVG')); ?></a>
+            <a id="export-svg" href"><?php p($l->t('to SVG')); ?></a>
         </li>
         <li>
-            <a id="export-pdf" href"><?php p($l->t('Export to PDF')); ?></a>
+            <a id="export-pdf" href"><?php p($l->t('to PDF')); ?></a>
         </li>
         <li>
-            <a id="export-markdown" href"><?php p($l->t('Export to Markdown')); ?></a>
+            <a id="export-markdown" href"><?php p($l->t('to Markdown')); ?></a>
         </li>
         <li>
-            <a id="export-text" href"><?php p($l->t('Export to Text')); ?></a>
+            <a id="export-csv" href"><?php p($l->t('to csv')); ?></a>
+        </li>
+        <li>
+            <a id="export-km-markdown" href"><?php p($l->t('to Markdown with id')); ?></a>
         </li>
     </ul>
 </div>
@@ -182,5 +194,8 @@
 
 <script nonce="<?=$nonce?>" src="<?php p($urlGenerator->linkTo('files_mindmap', 'js/viewer.js')) ?>?v=<?php p($version) ?>"></script>
 <script nonce="<?=$nonce?>" src="<?php p($urlGenerator->linkTo('files_mindmap', 'vendor/jsPDF/dist/jspdf.min.js')) ?>?v=<?php p($version) ?>"></script>
+<script nonce="<?=$nonce?>" src="<?php p($urlGenerator->linkTo('files_mindmap', 'js/protocol/km_markdown.js')) ?>?v=<?php p($version) ?>"></script>
+<script nonce="<?=$nonce?>" src="<?php p($urlGenerator->linkTo('files_mindmap', 'js/protocol/csv.js')) ?>?v=<?php p($version) ?>"></script>
+
 </html>
 

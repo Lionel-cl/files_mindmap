@@ -1,0 +1,12 @@
+{
+    "root":
+    {
+        "data":{"id":"bopmq1843661","created":1710401427433,"text":"hello","background":"#8db3e2","expandState":"expand"},
+        "children":[
+            {"data":{"id":"cztaqm9k3pk0","created":1710401527287,"text":"Vente","layout":null,"expandState":"expand","layout_mind_offset":{"x":-7,"y":204},"priority":7,"progress":5},"children":[{"data":{"id":"czu8aj2h3sw0","created":1710496184238,"text":"besoin 1","note":"jnvjfnn","expandState":"expand"},"children":[]},{"data":{"id":"czu8amlaxyg0","created":1710496191907,"text":"besoin","layout_right_offset":{"x":36,"y":17},"expandState":"expand"},"children":[]}]},{"data":{"id":"czu8aemtgug0","created":1710496174585,"text":"Sujet","expandState":"expand"},"children":[]},{"data":{"id":"cztaq6wi1o80","created":1710401493846,"text":"ok","expandState":"collapse","priority":null,"note":"coucou ceci est une note\n## attention à ce point\n# Merci\n### ok\n\n1. fr\n2. gd\n\t1. rfr\nfr\nfrfr\n3. rfrk,\n\nvrkn\nvkrn\n\n# titre 1\n## titre 2\n\n> ok moi\n\nune lignj  fjvjjfj llllllllmmmlmllmmmmmmmmmmmmllm lllll mmm lllmm\n\ntable | t2 | t3\n- | - | -\nj | kki | kfik \n","layout":null,"background":"#d6e3bc","layout_mind_offset":{"x":-162,"y":-326}},"children":[{"data":{"id":"cztaqtuqj6w0","created":1710401543805,"text":"re","layout":null,"expandState":"expand"},"children":[]},{"data":{"id":"cztaqrcwvvc0","created":1710401538374,"text":"er","layout":null,"expandState":"expand"},"children":[]},{"data":{"id":"cztb8k5ubq00","created":1710402933264,"text":"vf ","layout":null,"expandState":"collapse"},"children":[{"data":{"id":"cztb8njuseg0","created":1710402940641,"text":"vkf,k","layout":null,"expandState":"expand"},"children":[]},{"data":{"id":"cztb8opmxmo0","created":1710402943168,"text":"vf","layout":null,"expandState":"expand"},"children":[]}]}]},{"data":{"id":"cztaq16b55c0","created":1710401481378,"text":"s1","layout":null,"expandState":"expand"},"children":[]},{"data":{"id":"cztb5tprjuo0","created":1710402718967,"text":"ss1","progress":5,"resource":["toto","tutu"],"layout":null,"expandState":"collapse"},"children":[{"data":{"id":"cztb5yl9rq80","created":1710402729579,"text":"Sujet","layout":null,"expandState":"expand"},"children":[]},{"data":{"id":"cztaq2ucy4g0","created":1710401485009,"text":"s2","layout":null,"expandState":"expand"},"children":[]}]},
+            {"data":{"id":"cztaq45x6z40","created":1710401487885,"text":"s3","layout":null,"expandState":"expand"},"children":[]}
+            ]
+    },
+    "template":"right","theme":"fresh-blue",
+    "version":"1.4.43"
+}

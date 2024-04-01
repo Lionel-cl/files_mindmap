@@ -1,6 +1,7 @@
 /**
  * Checks if the page is displayed in an iframe. If not redirect to /.
  **/
+
 function redirectIfNotDisplayedInFrame () {
 	try {
 		if (window.frameElement) {
@@ -36,7 +37,7 @@ redirectIfNotDisplayedInFrame();
 					$scope.initEditor = function(editor, minder) {
 						window.editor = editor;
 						window.minder = minder;
-
+						
 						self.initHotkey();
 						self.bindEvent();
 						self.loadData();
@@ -78,8 +79,11 @@ redirectIfNotDisplayedInFrame();
 			$('#export-markdown').click(function(){
 				self.exportMarkdown();
 			});
-			$('#export-text').click(function(){
-				self.exportText();
+			$('#export-csv').click(function(){
+				self.exportCSV();
+			});
+			$('#export-km-markdown').click(function(){
+				self.exportKmMd();
 			});
 			$('#save-button').click(function() {
 				self.save();
@@ -279,13 +283,23 @@ redirectIfNotDisplayedInFrame();
 			});
 		},
 
-		exportText: function () {
+		exportCSV: function () {
 			var self = this;
-			minder.exportData('text').then(function (data) {
+			minder.exportData('csv').then(function (data) {
 				var url = 'data:text/plain;base64,' + Base64.encode(data);
-				self.download(url, 'export.txt');
+				self.download(url, 'export_mindmap.csv');
 			}, function (data){
-				console.error('export text fail', data);
+				console.error('export csv fail', data);
+			});
+		},
+
+		exportKmMd: function () {
+			var self = this;
+			minder.exportData('km_markdown').then(function (data) {
+				var url = 'data:text/markdown;base64,' + Base64.encode(data);
+				self.download(url, 'export_km.md');
+			}, function (data) {
+				console.error('export markdown fail', data);
 			});
 		},
 

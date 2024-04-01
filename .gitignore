@@ -1,0 +1,9 @@
+.idea
+.DS_Store
+Thumbs.db
+*.iml
+/build
+node_modules/
+/.php_cs.cache
+/tests/
+js/*hot-update.*
